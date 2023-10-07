@@ -18,9 +18,6 @@
 ## Task 1
 
 В классе Calculator метод calculateDiscount
-
-:::code source="Calculator/Calculator.java" range="45-60":::
-
 ```Java
      public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
 
