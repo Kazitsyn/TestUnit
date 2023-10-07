@@ -50,8 +50,8 @@ public class CalculatorTest {
 //                Calculator.calculation(8, 4, '_')
 //        ).isInstanceOf(IllegalStateException.class);
 
-        System.out.println(Calculator.calculation(2_147_483_646, 1, '+')); // integer overflow
-        System.out.println(Calculator.squareRootExtraction(169));
+//        System.out.println(Calculator.calculation(2_147_483_646, 1, '+')); // integer overflow
+//        System.out.println(Calculator.squareRootExtraction(169));
 
         // Примерные решения домашних заданий из 1 лекции:
 
@@ -73,5 +73,17 @@ public class CalculatorTest {
         // }
         //   assert 0 == seminars.first.Calculator.Calculator.calculation(2, 6, '+');
         //    assertThat(seminars.first.Calculator.Calculator.calculation(2, 6, '+')).isEqualTo(0);
+
+        System.out.println(seminars.first.Calculator.Calculator.calculatingDiscount(1000,20));
+        if (800 != seminars.first.Calculator.Calculator.calculatingDiscount(1000,20)){
+            throw new AssertionError("Ошибка в методе");
+        }
+        assert 800 == seminars.first.Calculator.Calculator.calculatingDiscount(1000,20);
+        assertThat(seminars.first.Calculator.Calculator.calculatingDiscount(1000,20)).isEqualTo(800);
+        assertThat(seminars.first.Calculator.Calculator.calculatingDiscount(1000,1000)).isEqualTo(-1);
+
+
+
     }
+
 }
