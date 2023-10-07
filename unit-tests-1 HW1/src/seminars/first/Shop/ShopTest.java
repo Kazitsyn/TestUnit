@@ -43,6 +43,4 @@ public class ShopTest {
         //Проверка корректности работы метода sortProductsByPrice
         assertThat(shop.sortProductsByPrice()).isEqualTo(sortProducts);
     }
-
-
 }
