@@ -2,7 +2,7 @@ package seminars.first.Calculator;
 
 import seminars.first.Calculator.Calculator;
 
-//import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
 
 public class CalculatorTest {
     public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class CalculatorTest {
 //                Calculator.calculation(8, 4, '_')
 //        ).isInstanceOf(IllegalStateException.class);
 
-        System.out.println(Calculator.calculation(2_147_483_647, 1, '+')); // integer overflow
+        System.out.println(Calculator.calculation(2_147_483_646, 1, '+')); // integer overflow
         System.out.println(Calculator.squareRootExtraction(169));
 
         // Примерные решения домашних заданий из 1 лекции:
